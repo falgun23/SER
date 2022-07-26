@@ -48,7 +48,7 @@ if choice == '1':
     
     get_audio()
     
-    path = 'Datasets/output.wav'
+    path = 'Datasets/recorded/output.wav'
     predict(path)
 
 elif choice== '2':

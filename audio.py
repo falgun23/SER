@@ -7,7 +7,7 @@ def get_audio():
     CHANNELS = 1
     RATE = 48000
     RECORD_SECONDS = 5
-    WAVE_OUTPUT_FILENAME = "Datasets/output.wav"
+    WAVE_OUTPUT_FILENAME = "Datasets/recorded/output.wav"
 
     p = pyaudio.PyAudio()
 

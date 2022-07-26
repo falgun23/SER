@@ -44,20 +44,9 @@ observed_emotions=['calm', 'happy', 'fearful', 'disgust']
 
 #WAV file channel conversion stereo to mono
 data_path = "Datasets/archive_*/Actor_*/*.wav"
-#data_path = "Datasets/arc/*"
+
 
 for file in glob.glob(data_path):
-    '''
-    if file == "*.mp3":
-        # convert wav to mp3                                                            
-        sound = AudioSegment.from_file(file)
-        sound.export(file+'.wav', format="wav")
-    else:
-        sound = AudioSegment.from_wav(file)
-        sound = sound.set_channels(1)
-        sound.export(file, format="wav")
-    '''
-    
     sound = AudioSegment.from_wav(file)
     sound = sound.set_channels(1)
     sound.export(file, format="wav")
